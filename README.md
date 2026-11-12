@@ -3,13 +3,22 @@
 ## Setup and first steps
 
 ### Getting started
-To get started, we're going to make a pull request on Github. If you haven't set up github/git yet, [follow the instructions below](#first-time-git-setup) to get started.
+To get started, we're going to make a pull request on GitHub. If you haven't set up GitHub/git yet, [follow the instructions below](#first-time-git-setup) to get started.
 
-First, clone the repo to your own machine. You can find the URL by hitting code, and then running `git clone` on the URL (If you connected below with SSH, make sure to switch to the SSH tag).
+First, clone the repo to your own machine. If you don't know how:
+
+1. Find the repository cloning url by clicking **Code**, then **Copy** the URL.
+> [!NOTE]
+> If you connected below with SSH, make sure to switch to the **SSH** tag.
 
 ![Git clone screen on github](./assets/git-clone-screen.png)
 
-If you don't get that, just run this command for now. `git clone` copies the folder on github onto your machine.
+2. Run the following:
+```sh
+git clone <copied_url>
+```
+
+`git clone` copies the folder on GitHub onto your machine. If you don't get that, just run this command for now:
 
 ```sh
 git clone git@github.com:ericli18/fullstack-eric.git
