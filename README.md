@@ -5,14 +5,25 @@
 ### Getting started
 To get started, we're going to make a pull request on Github. If you haven't set up github/git yet, follow the instructions below to get started.
 
-First, clone the repo to your own machine.
-```
+First, clone the repo to your own machine. You can find the URL by hitting code, and then running `git clone` on the URL (If you connected below with SSH, make sure to switch to the SSH tag).
+
+![Git clone screen on github](./assets/git-clone-screen.png)
+
+If you don't get that, just run this command for now. `git clone` copies the folder on github onto your machine.
 
 ```
+git clone git@github.com:ericli18/fullstack-eric.git
+```
 
-Then, make a new file in `src/01_SETUP` named your_name.md, with any text
+Create a new branch
 
-Open a pull request
+```
+git branch your_name_01
+```
+
+Then, make a new file in `src/01_SETUP` named `your_name.md`, with any text in it.
+
+Open a pull request (if you can't push, let me know), at the end your results should look like this
 
 
 ### First time git setup
