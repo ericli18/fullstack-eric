@@ -42,13 +42,15 @@ git push --set-upstream origin <your_name>_01
 
 If `git push` fails, let me know. It means you don't have the permissions necessary from my side.
 
-Open a pull request (pull requests>New pull request)
+If you're curious why we use the flag `--set-upstream`, ask me!
 
-The base branch is main, the compare is going to be `your_name_01`. You should see something like this:
+Open a pull request by clicking **Pull requests**>**New pull request**. Then, click **compare** and change the branch to be `<your_name>_01`. The base branch should remain as `main`
+
+You should see something like this:
 
 ![Git clone screen on github](./assets/pr-page.png)
 
-Just open the pull request
+Lastly, click **Create pull request**.
 
 ### First time git setup
 #### Github account + install git
