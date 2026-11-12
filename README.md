@@ -11,17 +11,22 @@ First, clone the repo to your own machine. You can find the URL by hitting code,
 
 If you don't get that, just run this command for now. `git clone` copies the folder on github onto your machine.
 
-```
+```sh
 git clone git@github.com:ericli18/fullstack-eric.git
 ```
 
-Create a new branch
+Create and checkout a new branch
 
-```
-git branch your_name_01
+```sh
+git checkout -b your_name_01
 ```
 
 Then, make a new file in `src/01_SETUP` named `your_name.md`, with any text in it.
+
+```sh
+git add .
+git commit -m "Eric's first commit"
+```
 
 Open a pull request (if you can't push, let me know), at the end your results should look like this
 
