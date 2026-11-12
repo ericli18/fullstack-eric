@@ -29,15 +29,15 @@ Once you've finished cloning the repository, first enter the directory with `cd 
 Then, create and checkout a new branch
 
 ```sh
-git checkout -b your_name_01
+git checkout -b <your_name>_01
 ```
 
-Then, make a new file in `src/01_SETUP` named `your_name.md`, with any text in it.
+Then, make a new file in `src/01_SETUP` named `<your_name>.md`, with any text in it.
 
 ```sh
 git add .
-git commit -m "Eric's first commit"
-git push --set-upstream origin your_name_01
+git commit -m "<your_name>'s first commit"
+git push --set-upstream origin <your_name>_01
 ```
 
 If `git push` fails, let me know. It means you don't have the permissions necessary from my side.
