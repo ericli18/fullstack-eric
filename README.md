@@ -26,7 +26,7 @@ Then, make a new file in `src/01_SETUP` named `your_name.md`, with any text in i
 ```sh
 git add .
 git commit -m "Eric's first commit"
-git push
+git push --set-upstream origin your_name_01
 ```
 
 If `git push` fails, let me know. It means you don't have the permissions necessary from my side.
@@ -35,6 +35,9 @@ Open a pull request (pull requests>New pull request)
 
 The base branch is main, the compare is going to be `your_name_01`. You should see something like this:
 
+![Git clone screen on github](./assets/pr-page.png)
+
+Just open the pull request
 
 ### First time git setup
 #### Github account + install git
