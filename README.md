@@ -26,9 +26,14 @@ Then, make a new file in `src/01_SETUP` named `your_name.md`, with any text in i
 ```sh
 git add .
 git commit -m "Eric's first commit"
+git push
 ```
 
-Open a pull request (if you can't push, let me know), at the end your results should look like this
+If `git push` fails, let me know. It means you don't have the permissions necessary from my side.
+
+Open a pull request (pull requests>New pull request)
+
+The base branch is main, the compare is going to be `your_name_01`. You should see something like this:
 
 
 ### First time git setup
