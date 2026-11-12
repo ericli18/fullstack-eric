@@ -53,8 +53,8 @@ You should see something like this:
 Lastly, click **Create pull request**.
 
 ### First time git setup
-#### Github account + install git
-Just make one + probably google this
+#### Create GitHub account + install git
+Just make a GitHub [here](https://github.com/signup) and install git [here](https://git-scm.com/install/)
 
 #### Setting up git
 The commands below will configure your information for git (for linux/macos). Use your own name obv.
@@ -88,11 +88,11 @@ ssh-keygen -t ed25519
 **On Github.com**
 Go to Profile>Settings>SSH and GPG Keys>New SSH key
 
-Name it whatever you want, key type is authentication key, and past in the result from
+Name it whatever you want, key type is authentication key, and paste in the result from
 ```sh
 cat ~/.ssh/id_ed25519.pub
 
-# TO automatically copy on linux
+# To automatically copy on linux
 cat ~/.ssh/id_ed25519.pub | wl-copy
 
 # To automatically copy on macOS (I think)
