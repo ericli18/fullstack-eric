@@ -24,7 +24,9 @@ git clone <copied_url>
 git clone git@github.com:ericli18/fullstack-eric.git
 ```
 
-Create and checkout a new branch
+Once you've finished cloning the repository, first enter the directory with `cd fullstack-eric`.
+
+Then, create and checkout a new branch
 
 ```sh
 git checkout -b your_name_01
