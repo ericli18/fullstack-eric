@@ -2,14 +2,25 @@
 
 ## Setup and first steps
 
-**If you can already make a pull request to this repo, you don't have to do the following**
+### Getting started
+To get started, we're going to make a pull request on Github. If you haven't set up github/git yet, follow the instructions below to get started.
+
+First, clone the repo to your own machine.
+```
+
+```
+
+Then, make a new file in `src/01_SETUP` named your_name.md, with any text
+
+Open a pull request
 
 
-### Github account + install git
+### First time git setup
+#### Github account + install git
 Just make one + probably google this
 
-### Setting up git
-The commands below will configure your information for git. Use your own name obv.
+#### Setting up git
+The commands below will configure your information for git (for linux/macos). Use your own name obv.
 
 ```sh
 git config --global user.name "Eric Li"
