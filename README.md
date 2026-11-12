@@ -3,7 +3,7 @@
 ## Setup and first steps
 
 ### Getting started
-To get started, we're going to make a pull request on Github. If you haven't set up github/git yet, follow the instructions below to get started.
+To get started, we're going to make a pull request on Github. If you haven't set up github/git yet, [follow the instructions below](#first-time-git-setup) to get started.
 
 First, clone the repo to your own machine. You can find the URL by hitting code, and then running `git clone` on the URL (If you connected below with SSH, make sure to switch to the SSH tag).
 
