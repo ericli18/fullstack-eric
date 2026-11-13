@@ -3,45 +3,58 @@
 ## Setup and first steps
 
 ### Getting started
-To get started, we're going to make a pull request on Github. If you haven't set up github/git yet, [follow the instructions below](#first-time-git-setup) to get started.
+To get started, we're going to make a pull request on GitHub. If you haven't set up GitHub/git yet, [follow the instructions below](#first-time-git-setup) to get started.
 
-First, clone the repo to your own machine. You can find the URL by hitting code, and then running `git clone` on the URL (If you connected below with SSH, make sure to switch to the SSH tag).
+First, clone the repo to your own machine. If you don't know how:
+
+1. Find the repository cloning url by clicking **Code**, then **Copy** the URL.
+> [!NOTE]
+> If you connected below with SSH, make sure to switch to the **SSH** tag.
 
 ![Git clone screen on github](./assets/git-clone-screen.png)
 
-If you don't get that, just run this command for now. `git clone` copies the folder on github onto your machine.
+2. Run the following:
+```sh
+git clone <copied_url>
+```
+
+`git clone` copies the folder on GitHub onto your machine. If you don't get that, just run this command for now:
 
 ```sh
 git clone git@github.com:ericli18/fullstack-eric.git
 ```
 
-Create and checkout a new branch
+Once you've finished cloning the repository, first enter the directory with `cd fullstack-eric`.
+
+Then, create and checkout a new branch
 
 ```sh
-git checkout -b your_name_01
+git checkout -b <your_name>_01
 ```
 
-Then, make a new file in `src/01_SETUP` named `your_name.md`, with any text in it.
+Then, make a new file in `src/01_SETUP` named `<your_name>.md`, with any text in it.
 
 ```sh
 git add .
-git commit -m "Eric's first commit"
-git push --set-upstream origin your_name_01
+git commit -m "<your_name>'s first commit"
+git push --set-upstream origin <your_name>_01
 ```
 
 If `git push` fails, let me know. It means you don't have the permissions necessary from my side.
 
-Open a pull request (pull requests>New pull request)
+If you're curious why we use the flag `--set-upstream`, ask me!
 
-The base branch is main, the compare is going to be `your_name_01`. You should see something like this:
+Open a pull request by clicking **Pull requests**>**New pull request**. Then, click **compare** and change the branch to be `<your_name>_01`. The base branch should remain as `main`
+
+You should see something like this:
 
 ![Git clone screen on github](./assets/pr-page.png)
 
-Just open the pull request
+Lastly, click **Create pull request**.
 
 ### First time git setup
-#### Github account + install git
-Just make one + probably google this
+#### Create GitHub account + install git
+Just make a GitHub [here](https://github.com/signup) and install git [here](https://git-scm.com/install/)
 
 #### Setting up git
 The commands below will configure your information for git (for linux/macos). Use your own name obv.
@@ -75,11 +88,11 @@ ssh-keygen -t ed25519
 **On Github.com**
 Go to Profile>Settings>SSH and GPG Keys>New SSH key
 
-Name it whatever you want, key type is authentication key, and past in the result from
+Name it whatever you want, key type is authentication key, and paste in the result from
 ```sh
 cat ~/.ssh/id_ed25519.pub
 
-# TO automatically copy on linux
+# To automatically copy on linux
 cat ~/.ssh/id_ed25519.pub | wl-copy
 
 # To automatically copy on macOS (I think)
