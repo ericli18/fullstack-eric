@@ -18,7 +18,7 @@ First, clone the repo to your own machine. If you don't know how:
 git clone <copied_url>
 ```
 
-`git clone` copies the folder on GitHub onto your machine. If you don't get that, just run this command for now:
+`git clone` copies the folder on GitHub onto your machine. The final command should look something like this:
 
 ```sh
 git clone git@github.com:ericli18/fullstack-eric.git
@@ -26,13 +26,13 @@ git clone git@github.com:ericli18/fullstack-eric.git
 
 Once you've finished cloning the repository, first enter the directory with `cd fullstack-eric`.
 
-Then, create and checkout a new branch
+Create and checkout a new branch
 
 ```sh
 git checkout -b <your_name>_01
 ```
 
-Then, make a new file in `src/01_SETUP` named `<your_name>.md`, with any text in it.
+Make a new file in `src/01_SETUP` named `<your_name>.md`, with any text in it.
 
 ```sh
 git add .
@@ -53,6 +53,8 @@ You should see something like this:
 Lastly, click **Create pull request**.
 
 ### First time git setup
+If you haven't set up git/github or want to set it up via SSH, you can follow these instructions
+
 #### Create GitHub account + install git
 Just make a GitHub [here](https://github.com/signup) and install git [here](https://git-scm.com/install/)
 
