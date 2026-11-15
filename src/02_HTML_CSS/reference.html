@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Card Reference</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@400&family=Poppins:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            line-height: 1.5;
+            max-width: 48rem;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        code {
+            background: #f2f2f2;
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        .swatch {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border: 1px solid #999;
+            border-radius: 4px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>QR Code Card Reference</h1>
+    <p>
+        Use this page as your reference for the exercise. Build your solution in
+        <code>src/02_HTML_CSS/&lt;your_name&gt;/</code>.
+    </p>
+
+    <h2>Design</h2>
+    <h3>Desktop</h3>
+    <img src="assets/desktop.png" alt="Desktop screenshot of the finished QR code card">
+    <h3>Mobile</h3>
+    <img src="assets/mobile.png" alt="Mobile screenshot of the finished QR code card">
+
+    <h2>Image</h2>
+    <p>The QR code is at <code>assets/qr-code.png</code>.</p>
+    <img src="assets/qr-code.png" alt="TAMUhack 2027 check-in QR code" width="200" height="200">
+
+    <h2>Fonts</h2>
+    <p>Both fonts are on <a href="https://fonts.google.com/">Google Fonts</a>.</p>
+    <table>
+        <tr>
+            <th>Used for</th>
+            <th>Font</th>
+            <th>Sample</th>
+        </tr>
+        <tr>
+            <td>Heading</td>
+            <td>Poppins, Bold (700)</td>
+            <td style="font-family: 'Poppins', sans-serif; font-weight: 700;">TAMUhack 2027</td>
+        </tr>
+        <tr>
+            <td>Body text</td>
+            <td>Geist, Regular (400)</td>
+            <td style="font-family: 'Geist', sans-serif;">Present this QR code to the scanners.</td>
+        </tr>
+    </table>
+
+    <h2>Colors</h2>
+    <table>
+        <tr>
+            <th>Used for</th>
+            <th>Color</th>
+        </tr>
+        <tr>
+            <td>Page background</td>
+            <td><span class="swatch" style="background: #fef7fa;"></span> <code>#fef7fa</code></td>
+        </tr>
+        <tr>
+            <td>Card background</td>
+            <td><span class="swatch" style="background: #ffffff;"></span> <code>#ffffff</code></td>
+        </tr>
+        <tr>
+            <td>Heading text</td>
+            <td><span class="swatch" style="background: #000000;"></span> <code>#000000</code></td>
+        </tr>
+        <tr>
+            <td>Body text</td>
+            <td><span class="swatch" style="background: #5f6b7a;"></span> <code>#5f6b7a</code></td>
+        </tr>
+    </table>
+
+    <h2>Resources</h2>
+    <ul>
+        <li>
+            <a href="https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/">An Interactive Guide to Flexbox</a>
+            by Josh Comeau
+        </li>
+        <li>
+            <a href="https://www.joshwcomeau.com/css/interactive-guide-to-grid/">An Interactive Guide to CSS Grid</a>
+            by Josh Comeau
+        </li>
+        <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS reference</a>
+            on MDN
+        </li>
+        <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model">The box model</a>
+            on MDN
+        </li>
+    </ul>
+</body>
+
+</html>
