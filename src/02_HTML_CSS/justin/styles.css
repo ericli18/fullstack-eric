@@ -52,3 +52,36 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+body {
+    background-color: #fef7fa;
+    display: grid;
+    place-items: center;
+    height: 100svh; /* is this bad code practice */
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: min(90svw, 400px); /* this one too */
+    border-radius: 20px;
+    box-shadow: 3px 3px 15px 3px rgba(0,0,0,0.2);
+}
+
+.img-wrapper {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: clip;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: "Geist", sans-serif;
+    color: #5f6b7a;
+}
