@@ -1,0 +1,51 @@
+
+body{
+    background: hsl(334, 78%, 98%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+}
+.card p{
+    font-family: "Geist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #5f6b7a;
+}
+
+
+#qr-code img{
+    align-items: right;
+    width: 350px;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 5%;
+    margin-top: -2%;
+}
+
+#text p{
+    margin-top: -5%;
+}
