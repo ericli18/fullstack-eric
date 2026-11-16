@@ -1,0 +1,41 @@
+@import url('https://googleapis.com');
+
+body {
+    background-color: #fef7fa
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 360px;
+    padding: 17px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 13px 5px rgba(0,0,0,0.14)
+}
+
+.qrcode {
+    max-width: 100%;
+    border-radius: 15px;
+    height: auto 
+}
+
+.header {
+    font-family: "Poppins";
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 5px;
+    margin-top: 7px;
+}
+
+p {
+    margin: 5px;
+    color: #5f6b7a;
+    font-family: 'Geist';
+}
