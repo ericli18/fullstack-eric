@@ -63,8 +63,6 @@ body {
 
 .card {
     background-color: white;
-    display: flex;
-    flex-direction: column;
     padding: 1.5rem;
     max-width: 400px;
     border-radius: 20px;
