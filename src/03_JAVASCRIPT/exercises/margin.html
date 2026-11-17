@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises for Javascript</title>
+    <style>
+        /* Exercise 1 */
+        #ex1 .box {
+            max-width: 300px;
+            height: 50px;
+        }
+
+        /* Exercise 2 */
+        #ex2 .box {
+            max-width: 300px;
+        }
+
+        /* Exercise 3 */
+        #ex3 .box {
+            max-width: 100px;
+        }
+
+        /* Exercise 4 */
+        #ex4 .container {
+            display: flex;
+        }
+
+        /* Exercise 5 */
+        #ex5 .box {
+            max-width: 100px;
+        }
+
+        /* Exercise 6 */
+        #ex6 .container {
+            max-width: 300px;
+        }
+
+        #ex6 .box {
+            width: 100%;
+            padding: 20px;
+        }
+
+
+        /* Shared styles so you can see the edges of each box. You don't need to change these. */
+        .container {
+            border: 2px dashed gray;
+        }
+
+        .box {
+            border: 2px solid black;
+            background-color: lightblue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Margin and padding</h1>
+        <h2>Resources</h2>
+        <ol>
+            <li><a href="https://fedmentor.dev/posts/padding-margin/">If you only read one I think this is best</a></li>
+            <li><a href="https://css-tricks.com/almanac/properties/m/margin/">If you have trouble with margins, this could be helpful. It might be too advanced at points though</a></li>
+            <li><a href="https://web.dev/learn/css/box-model">May help clarify box model and reasons why things are spilling out of your boxes</a></li>
+            <li><a href="https://stackoverflow.com/questions/2189452/what-is-the-difference-between-margin-and-padding-in-css">Helps understand when to use margin/padding sometimes</a></li>
+        </ol>
+
+        <h2>Exercises</h2>
+        <p>Open this file and edit the CSS. Maybe make a copy or something, don't commit it pls.</p>
+
+        <section id="ex1">
+            <h3>1. Restrict the width but not the height</h3>
+            <p>The text spills out of the bottom of the box. Keep the box at most 300px wide, but let it grow as tall as it needs to.</p>
+            <div class="box">
+                This box has a lot of text in it. This box has a lot of text in it.
+                This box has a lot of text in it. This box has a lot of text in it.
+                This box has a lot of text in it. This box has a lot of text in it.
+            </div>
+        </section>
+
+        <section id="ex2">
+            <h3>2. Add space between the text and the edge</h3>
+            <div class="box">My text is squished against the border</div>
+        </section>
+
+        <section id="ex3">
+            <h3>3. Push two items further apart</h3>
+            <div class="container">
+                <div class="box">One</div>
+                <div class="box">Two</div>
+            </div>
+        </section>
+
+        <section id="ex4">
+            <h3>4. Push items as far apart as possible</h3>
+            <p>Move "Left" to the left edge and "Right" to the right edge of the dashed box.</p>
+            <div class="container">
+                <div class="box">Left</div>
+                <div class="box">Right</div>
+            </div>
+        </section>
+
+        <section id="ex5">
+            <h3>5. Push an item to the right, with space from the edges</h3>
+            <p>Move the box to the right side of the dashed box, but don't let it touch the dashed border.</p>
+            <div class="container">
+                <div class="box">Move me</div>
+            </div>
+        </section>
+
+        <section id="ex6">
+            <h3>6. Content spills out of the side of the box</h3>
+            <p>The blue box sticks out past the right edge of the dashed box. Make it fit inside.</p>
+            <div class="container">
+                <div class="box">I should fit inside the dashed box</div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
