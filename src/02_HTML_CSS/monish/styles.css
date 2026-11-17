@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fef7fa;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;  
+    max-width: 30%;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
+}
+
+.card h1 {
+    font-family: Poppins;
+    color: #000000;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.card p {
+    font-family: Geist;
+    color: #5f6b7a;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 375px;
+}
+
+.card img {
+    border-radius: 20px;
+    width: 375px;
+}
+
