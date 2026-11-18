@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+    <script>
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/themes/prism.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/prism.min.js"></script>
+    <style>
+        main {
+            max-width: 80ch;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 12px;
+            overflow-x: auto;
+        }
+    </style>
+    <script>
+        console.log("Put your code below this!")
+    </script>
+</head>
+
+<body>
+    <main>
+        <h1>DOM manipulation</h1>
+        <h2>Overview and quick reference</h2>
+        <p> I recommend learning what the DOM is if you have time. There is an MDN article at the bottom to help </p>
+
+        <h3>Find elements with <code>querySelector</code> and <code>querySelectorAll</code></h3>
+        <p><code>querySelector</code> gives you the first match (or <code>null</code>).
+            <code>querySelectorAll</code> gives you a list of all the current matches.
+        </p>
+        <pre><code class="language-javascript">
+// find the first button on the screen
+const button = document.querySelector("button");
+
+// find the element with id="snacks".
+const snackList = document.querySelector("#snacks");
+
+// find the first element with class="highlight".
+const highlight = document.querySelector(".highlight");
+
+// find the first button with type="button".
+const plainButton = document.querySelector('button[type="button"]');
+
+// find every list item inside #snacks.
+const snacks = document.querySelectorAll("#snacks li");</code></pre>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Selectors">MDN guide to CSS selector
+                types</a></p>
+
+        <h3>React to events with <code>addEventListener</code></h3>
+        <p>Each dom element can listen for events that happen on it.</p>
+        <pre><code class="language-javascript">
+// Run when the button is activated by a click, tap, or keyboard.
+button.addEventListener("click", () => {
+console.log("The button was activated");
+});
+
+// Run when a key is pressed on the page. event.key tells you which key.
+document.addEventListener("keydown", (event) => {
+console.log(event.key);
+});
+
+// Run when the browser window changes size. If you want to know what the window vs. document objects
+//are, mdn has good docs on that. Basically window is everything about the current window, document is
+all
+// the stuff you see, and navigation is stuff like history
+window.addEventListener("resize", () => {
+console.log(window.innerWidth);
+});
+            </code></pre>
+        <p>More events on MDN:
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events">event reference</a>,
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/input_event">typing in a field</a>,
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event">submitting a
+                form</a>.
+        </p>
+
+        <h3>Change text and classes with <code>innerText</code> and <code>classList</code></h3>
+        <pre><code class="language-javascript">
+button.innerText = "Add a snack";
+button.classList.add("highlight");
+button.classList.remove("highlight");
+button.classList.toggle("highlight"); // Add it if missing, remove it if present.
+            </code></pre>
+
+        <h3>Put an element on the page with <code>appendChild</code></h3>
+        <p><code>createElement</code> makes an element in JavaScript. Call <code>appendChild</code> on the parent
+            to put it after the parent's existing children.</p>
+        <pre><code class="language-javascript">
+const message = document.createElement("p");
+message.innerText = "Snack time!";
+document.querySelector("main").appendChild(message);</code></pre>
+
+        <h2>Exercise</h2>
+        <p>Each time you click the button, add a new list item </p>
+        <button type="button" id="add-snack">Add popcorn</button>
+        <ul id="snacks">
+            <li>Pretzels</li>
+        </ul>
+
+
+        <h2>Resources</h2>
+        <ol>
+            <li><a href="https://www.theodinproject.com/lessons/foundations-dom-manipulation-and-events">The Odin
+                    Project walkthrough (see DOM methods and events)</a></li>
+            <li><a
+                    href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/DOM_scripting#doing_some_basic_dom_manipulation">MDN's
+                    example of creating and adding elements</a></li>
+        </ol>
+
+    </main>
+</body>
+
+</html>
