@@ -12,13 +12,21 @@ body{
     list-style: none;
     background-color: black;
     padding: 20px;
-    /* border-radius: 8px; */
     width: 120px;
-    height: 240px;
+    height: 540px;
+}
+
+#edge-1 {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#edge-2 {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .color-box {
     display: flex;
     flex-direction: row;
-    /* gap: 17px; */
 }
