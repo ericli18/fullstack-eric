@@ -3,14 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="card">
-        <div id="colors">
-            
-        </div>
-        <button>Hello</button>
-    </div>
+    <!-- Some Box that Can Change Color -->
+    <ul class="color-box">
+        <li class="color-item"></li>
+        <li class="color-item"></li>
+        <li class="color-item"></li>
+        <li class="color-item"></li>
+        <li class="color-item"></li>
+    </ul>
+    <button id="changeColor">Color</button>
 </body>
+
+<script>
+
+    const button = document.querySelector("#changeColor");
+    const targets = document.querySelectorAll(".color-item");
+
+    function changeColor(){
+        console.log("Color Was Changed");
+        targets.forEach(li => {
+            li.style.backgroundColor = diffColor();
+        });
+    }
+
+    function diffColor(){
+        const r = Math.floor(Math.random() * 255);
+        const g = Math.floor(Math.random() * 255);
+        const b = Math.floor(Math.random() * 255);
+        return `rgb(${r}, ${g}, ${b})`;
+    }
+    
+    button.addEventListener("click", changeColor);
+</script>
 </html>
