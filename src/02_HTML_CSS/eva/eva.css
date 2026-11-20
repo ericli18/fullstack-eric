@@ -1,0 +1,37 @@
+body {
+    
+    background-color: #fef7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+
+.card {
+    background-color: #ffffff;
+    max-width: 600px;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0px 5px 10px 5px rgb(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 16px;
+    margin-inline: auto;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 700;
+    color: #000000;
+}
+
+p {
+    font-family: 'Geist', sans-serif;
+    color: #5f6b7a;
+    margin-top: -20px;
+}
+
