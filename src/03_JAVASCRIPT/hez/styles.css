@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.color-box li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: black;
+    padding: 20px;
+    width: 120px;
+    height: 540px;
+}
+
+#edge-1 {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#edge-2 {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.color-box {
+    display: flex;
+    flex-direction: row;
+}
