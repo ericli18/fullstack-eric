@@ -1,21 +1,21 @@
 import './App.css'
 
-function CondtionalRender() {
-  const odd = 1;
-
-  let OddComponent;
-
-  if(odd % 2 == 1) {
-    return <div>Odd</div>
+function ConditionalRender(props){
+  if (props.num % 2 == 1) {
+    return <li>Odd</li>
   }
   else {
-    return <div>Even</div>
+    return <li>Even</li>
   }
+}
 
+function CondtionalRenderList(props) {
   return (
-    <>
-      <OddComponent />
-    </>
+    <ol>
+    {
+      [...Array(props.num)].map((_, i) => <ConditionalRender key={i} num={i} />)
+    }
+    </ol>
   )
 }
 
@@ -49,10 +49,15 @@ function App() {
 
   return (
     <div>
+      <h2>Using Javascript variables in React</h2>
       {`${first_name} ${last_name}`}
-      <CondtionalRender />
+      <h2>Conditonally rendering an odd component </h2>
+      <CondtionalRenderList num={5} />
+      <h2>Using props</h2>
       <SameChild content={content} />
+      <h2>Looping through a list</h2>
       <ListLooper />
+      <h2>Calling an event</h2>
       <button onClick={handleClick} > Click me to say hello world! </button>
     </div>
   )
