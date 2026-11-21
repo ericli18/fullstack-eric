@@ -1,0 +1,59 @@
+body {
+    background-color: #fef7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+   
+   
+    
+
+}
+
+.qrcode {
+    background-color: #ffffff;
+    width: 450px; 
+    gap: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
+   
+    
+    
+
+}
+#header {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    margin-bottom: -10px;
+    margin-left: auto;
+    
+
+}
+#info {
+    font-family: "Geist";
+    font-weight: 400;
+    font-style: normal;
+    color: #5f6b7a;
+    width: auto;
+    margin-left: auto;
+    
+}
+#image {
+    width: 450px;
+    margin-top: auto;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    
+    
+    
+
+}
+
+
+
