@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Card Reference</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+    <div id="rect" class="r1"></div>
+    <div id="rect" class="r2"></div>
+    <div id="rect" class="r3"></div>
+    <div id="rect" class="r4"></div>
+    <div id="rect" class="r5"></div>
+
+    <button id="genBut"> Generate new colors </button>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+<style>
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#rect {
+    height: 400px;
+    width: 150px;
+}
+
+.r1{
+    background-color: coral;
+    border-radius: 20px 0 0 0;
+}
+
+.r2{
+    background-color: rgb(10, 185, 19);
+}
+
+.r3{
+    background-color: rgb(241, 238, 36);
+}
+
+.r4{
+    background-color: rgb(244, 10, 233);
+}
+
+.r5{
+    background-color: rgb(58, 54, 53);
+    border-radius: 0 20px 0 0;
+}
+</style>
+
+
+
+
+
+
+
+
+
+<script>
+
+var generate = document.getElementById("genBut");
+
+function changeColors()
+{
+
+}
+
+generate.addEventListener("click", () => {generate.style.backgroundColor = "pink";});
+
+</script>
